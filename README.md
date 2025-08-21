@@ -22,28 +22,20 @@ The challenge is split into two parts, where first part involves the implementat
 ### Part 1: Time Series Forecasting
 In this part you will:
 
-- Implement a time series forecasting model with a transformer backbone and any prediction head design of your choice. (Implemented yourself, do not use externally implemented models) 
+- Implement a time series forecasting model with a **Transformer** backbone and any prediction head design of your choice. (Implemented yourself, do not use externally implemented models) 
 - Train the model on the provided dataset.
 - Test the model to evaluate its performance.
 - Benchmark your model to predict future trend in different time-windows, Select a time window that performs the best.
 
 ---
-#### Datasets
-There are 2 datasets we have selected for this exercise, feel free to explore and choose the one that you'd like to use.
+#### Datasets: CO2 Concentration Estimation
+This dataset originates from Imperial College’s Carbon Capture Pilot Plant, which simulates industrial-scale CO₂ absorption processes relevant to the Oil & Gas industry. The task involves estimating CO₂ concentration levels at six different sampling points within the absorber unit.
 
-1. **Yahoo finance stock data**: As the name suggests this is a financial time series dataset. To download it a python script has already been written for you. You can download the data via the following:
+For Oil & Gas industry, CO₂ capture and monitoring are critical components of modern Oil & Gas operations, particularly as companies transition toward low-carbon energy solutions. Accurate forecasting of CO₂ concentration helps improve process efficiency, reduce emissions, and ensure compliance with environmental standards.
 
-```shell
-python src/utils/download_yfinance_data.py AAPL
-```
-
-This will download the stock data for Apple Inc. (AAPL) from 5 days ago to yesterday in 5-minute intervals, and save it to a CSV file named `AAPL_stock_data.csv`. You can also specify custom dates if needed as shown by the sample command below. Though minimum, 60 days length in 5 minute intervals is what we recommend.
-
-```shell
-python src/utils/download_yfinance_data.py AAPL --start_date 2024-05-17 --end_date 2024-05-22 --interval 5m
-```
-
-2. **CO2 Concentration Estimation**: This task utilized a publicly available dataset from Imperial College’s Carbon Capture Pilot Plant, accessible through the [orginal repositry](https://github.com/tonyzyl/CO2-Soft-sensor-for-a-carbon-capture-pilot-plant/tree/main/data/withLabel) or our [Google Drive](https://drive.google.com/drive/folders/1llbR-zxds5uRB-dcOykNdhSOyUi2YQDZ?usp=sharing). This task requires estimating the CO2 concentration at six distinct sampling points in the absorber. For more details on the dataset and preprocessing steps, please refer to the [official notebook](https://github.com/tonyzyl/CO2-Soft-sensor-for-a-carbon-capture-pilot-plant/blob/main/Estimate_CO2_profile.ipynb). If you choose to proceed with this task, we strongly recommend using `140207_1.xlsx` as the test dataset, while the remaining files serve as the training dataset. The related paper is also included in our [Goolge Drive](https://drive.google.com/drive/folders/1llbR-zxds5uRB-dcOykNdhSOyUi2YQDZ?usp=sharing), please feel free to read it for additional background information.
+- This task utilized a publicly available dataset from Imperial College’s Carbon Capture Pilot Plant, accessible through the [orginal repositry](https://github.com/tonyzyl/CO2-Soft-sensor-for-a-carbon-capture-pilot-plant/tree/main/data/withLabel). 
+- This task requires estimating the CO2 concentration at six distinct sampling points in the absorber. For more details on the dataset and preprocessing steps, please refer to the [official notebook](https://github.com/tonyzyl/CO2-Soft-sensor-for-a-carbon-capture-pilot-plant/blob/main/Estimate_CO2_profile.ipynb). 
+- If you choose to proceed with this task, we strongly recommend using `140207_1.xlsx` as the test dataset, while the remaining files serve as the training dataset. The related paper is also included in our [Goolge Drive](https://drive.google.com/drive/folders/1llbR-zxds5uRB-dcOykNdhSOyUi2YQDZ?usp=sharing), please feel free to read it for additional background information.
 
 ---
 
@@ -53,6 +45,20 @@ In this part, you will:
 - Analyse the performance of your model.
 - Interpret the results and provide insights.
 - Document your analysis and findings in a Jupyter Notebook, including visualizations and detailed explanations.
+
+---
+
+### Bonus Part (Optional): Towards a Production-Ready Deployment
+If you have additional time, we encourage you to go beyond research prototyping and demonstrate how the model could be deployed in a production-like Oil & Gas environment. This is critical for bridging the gap between proof-of-concept and real-world operational systems.
+
+1. **Database Integration**
+    - Load test data (e.g., CO₂ sensor readings) into PostgreSQL with a schema reflecting time-series sensor logs.
+2. **Model Serving**
+    - Wrap the trained Transformer model in a FastAPI service.
+    - Provide a REST endpoint for predictions at given timestamps or time windows.
+3. **Containerization & Deployment**
+    - Dockerize the pipeline (Postgres + FastAPI + preprocessing).
+    - Supply a docker-compose.yml for one-command setup.
 
 ## What we'd like to see 🙀
 We'd like to see:
