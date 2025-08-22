@@ -35,7 +35,7 @@ For Oil & Gas industry, CO₂ capture and monitoring are critical components of 
 
 - This task utilized a publicly available dataset from Imperial College’s Carbon Capture Pilot Plant, accessible through the [orginal repositry](https://github.com/tonyzyl/CO2-Soft-sensor-for-a-carbon-capture-pilot-plant/tree/main/data/withLabel). 
 - This task requires estimating the CO2 concentration at six distinct sampling points in the absorber. For more details on the dataset and preprocessing steps, please refer to the [official notebook](https://github.com/tonyzyl/CO2-Soft-sensor-for-a-carbon-capture-pilot-plant/blob/main/Estimate_CO2_profile.ipynb). 
-- If you choose to proceed with this task, we strongly recommend using `140207_1.xlsx` as the test dataset, while the remaining files serve as the training dataset. The related paper is also included in our [Goolge Drive](https://drive.google.com/drive/folders/1llbR-zxds5uRB-dcOykNdhSOyUi2YQDZ?usp=sharing), please feel free to read it for additional background information.
+- If you choose to proceed with this task, we strongly recommend using `140207_1.xlsx` as the test dataset, while the remaining files serve as the training dataset. Our team will send the related paper via email, please feel free to read it for additional background information.
 
 ---
 
@@ -58,7 +58,7 @@ If you have additional time, we encourage you to go beyond research prototyping 
     - Provide a REST endpoint for predictions at given timestamps or time windows.
 3. **Containerization & Deployment**
     - Dockerize the pipeline (Postgres + FastAPI + preprocessing).
-    - Supply a docker-compose.yml for one-command setup.
+    - Supply a `docker-compose.yml` for one-command setup.
 
 ## What we'd like to see 🙀
 We'd like to see:
@@ -85,4 +85,4 @@ Good luck, and we look forward to seeing your work!
 If you have any questions, or need further clarification of any of the challenges. 
 
 Then please reach out to: 
-📣 nick@kashmirintelligence.com 📣
+📣 nick@appliedcomputing.com 📣
