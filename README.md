@@ -43,7 +43,7 @@ For Oil & Gas industry, CO₂ capture and monitoring are critical components of 
 In this part, you will:
 
 - Analyse the performance of your model.
-- Interpret the results and provide insights.
+- Interpret the results and provide the related **ROOT CAUSE ANALYSIS**.
 - Document your analysis and findings in a Jupyter Notebook, including visualizations and detailed explanations.
 
 ---
