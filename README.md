@@ -48,7 +48,7 @@ In this part, you will:
 
 ---
 
-### Bonus Part (Optional): Towards a Production-Ready Deployment
+### Part 3: Towards a Production-Ready Deployment
 If you have additional time, we encourage you to go beyond research prototyping and demonstrate how the model could be deployed in a production-like Oil & Gas environment. This is critical for bridging the gap between proof-of-concept and real-world operational systems.
 
 1. **Database Integration**
