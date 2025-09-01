@@ -49,7 +49,7 @@ In this part, you will:
 ---
 
 ### Part 3: Towards a Production-Ready Deployment
-If you have additional time, we encourage you to go beyond research prototyping and demonstrate how the model could be deployed in a production-like Oil & Gas environment. This is critical for bridging the gap between proof-of-concept and real-world operational systems.
+In this part, you need to go beyond research prototyping and demonstrate how the model could be deployed in a production-like Oil & Gas environment. This is critical for bridging the gap between proof-of-concept and real-world operational systems.
 
 1. **Database Integration**
     - Load test data (e.g., CO₂ sensor readings) into PostgreSQL with a schema reflecting time-series sensor logs.
@@ -78,6 +78,7 @@ You will be assessed on:
 - Interpretability: How well you interpret and explain the results of your model.
 - Code Quality: The readability, organization, and documentation of your code.
 - Visualizations: The effectiveness of your visualizations in conveying your findings.
+- A production-ready deployment.
 
 Good luck, and we look forward to seeing your work!
 
